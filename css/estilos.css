@@ -81,6 +81,9 @@ header {
     align-items: center;
     text-align: center;
     padding: 20px;
+    height: 600px;
+    height: 60vh;
+    justify-content: center;
         
 }
 
@@ -100,6 +103,11 @@ SOBRE
     padding: 0 20px 20px;
     background-color: #8f2faf;
     color: #f1f1f1;
+    height: 250px;
+    height: 30vh;
+    justify-content: center;
+    min-height: 250px;
+    
 }
 
 #sobre p {
@@ -120,16 +128,26 @@ SERVIÇOS
 #serviços{
     padding: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
+#serviços h2{
+    text-align: center;
+    width: 100%;
+}
 #serviços div {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 30px; 
+    margin-top: 30px;
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
 }
 
 /*
@@ -138,17 +156,21 @@ PORTFÓLIO
 
 #portfolio {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     padding-top: 20px;
 }
 
 #portfolio h2 {
     margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 #portfolio img {
-    width: 100%;
+    width: 33.3333333333%;
+    
 }
 
 /*
@@ -157,11 +179,19 @@ CONTATOS
 
 #contato {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
     align-items: center;
     text-align: center;
     padding: 20px;
     
+}
+#contato h2,
+#contato p{
+    width: 100%;
 }
 
 /*
